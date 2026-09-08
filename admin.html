@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>RS7TECNO | Administrar</title><link rel="stylesheet" href="admin.css"></head>
+<body>
+<header><a href="index.html">← Volver al catálogo</a><strong>RS7TECNO / ADMIN</strong></header>
+<main>
+<section class="panel">
+<h1>Agregar producto</h1>
+<p>Los productos se guardan en este navegador mediante almacenamiento local.</p>
+<form id="form">
+<input id="nombre" required placeholder="Nombre del producto">
+<input id="categoria" required placeholder="Categoría (Audio, Gamer...)">
+<input id="precio" required type="number" min="0" placeholder="Precio">
+<input id="mayorista" placeholder="Precio o texto mayorista">
+<textarea id="descripcion" required placeholder="Descripción"></textarea>
+<input id="imagen" placeholder="Ruta de imagen, ej: img/producto.jpg">
+<button>AGREGAR PRODUCTO</button>
+</form>
+</section>
+<section class="panel">
+<h2>Productos cargados</h2>
+<div id="lista"></div>
+</section>
+</main>
+<script src="admin.js"></script>
+</body></html>
